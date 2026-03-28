@@ -1,7 +1,7 @@
 import * as typeProperty from "./rules/type-property.js";
 
 const plugin = {
-    meta: { name: "oxlint-plugin-keychord" },
+    meta: { name: "@keychord/package-json" },
     rules: {
         "type": typeProperty.rule,
     },
