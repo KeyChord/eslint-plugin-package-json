@@ -2,20 +2,23 @@
   "name": "@keychord/eslint-plugin-package-json",
   "type": "module",
   "version": "0.0.0",
-  "files": ["src", "exports"],
+  "files": [
+    "src",
+    "exports"
+  ],
   "exports": {
-    ".": {
-      "types": "./exports/default.d.ts",
-      "default": "./exports/default.js"
-    }
+    ".": "./exports/default.mjs",
+    "./package.json": "./package.json"
   },
   "dependencies": {
     "jsonc-eslint-parser": "^3.1.0"
   },
+  "peerDependencies": {
+    "eslint": "^10.1.0"
+  },
   "packageManager": "pnpm@10.33.0",
   "devDependencies": {
     "@types/estree": "^1.0.8",
-    "eslint": "^10.1.0",
     "json-schema-to-ts": "^3.1.1",
     "vite-plugin-dts": "^4.5.4",
     "vite-plus": "^0.1.14"
