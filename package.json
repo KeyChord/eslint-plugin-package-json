@@ -2,6 +2,7 @@
   "name": "@keychord/eslint-plugin-package-json",
   "type": "module",
   "version": "0.0.0",
+  "files": ["src", "exports"],
   "exports": {
     ".": {
       "types": "./exports/default.d.ts",
